@@ -18,4 +18,8 @@ cc_binary {
     ],
     relative_install_path : "hw",
     vendor: true,
+    overrides: [
+        "android.hardware.light@2.0-service",
+        "android.hardware.lights-service.qti",
+    ],
 }
