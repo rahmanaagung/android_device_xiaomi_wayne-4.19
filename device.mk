@@ -237,10 +237,6 @@ PRODUCT_COPY_FILES += \
  PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.wayne
-
 # Media
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -311,7 +307,8 @@ PRODUCT_PACKAGES += \
 TARGET_COMMON_QTI_COMPONENTS += \
     audio \
     av \
-    bt
+    bt \
+    display
 
 # RIL
 PRODUCT_PACKAGES += \
