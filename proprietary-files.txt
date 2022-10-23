@@ -75,7 +75,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|d5fcb9c2cf5538b9c9
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|8e9a2ea4dc86f211a8842db98340e66c5686945d
 vendor/lib64/libbtnv.so|82cc941c6a262e0965925b4955b1ea508b798bfa
 vendor/lib64/libbt-hidlclient.so|586c6341fb01e1c8ae35997b8d5b1963cdcb9334
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|d214ad9022558b7521a51f068049d36eae1c4b95
 
 # Bluetooth (aptX) - from coral-user 11 RQ3A.211001.001 7641976
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
