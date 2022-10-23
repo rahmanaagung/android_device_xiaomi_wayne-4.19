@@ -355,6 +355,10 @@ PRODUCT_PACKAGES += \
     libjson \
     libjson.vendor
 
+# QTI
+TARGET_COMMON_QTI_COMPONENTS += \
+    av
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
