@@ -298,7 +298,8 @@ TARGET_COMMON_QTI_COMPONENTS += \
     av \
     bt \
     display \
-    perf
+    perf \
+    telephony
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -312,18 +313,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libprotobuf-cpp-full
 
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -333,11 +322,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
-
-# Tetheroffload
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
 
 # Thermal
 PRODUCT_COPY_FILES += \
