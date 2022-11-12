@@ -1,6 +1,5 @@
 #
 # Copyright (C) 2018 The LineageOS Project
-# Copyright (C) 2021-2022 Miku UI
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -14,7 +13,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 BOARD_VENDOR := xiaomi
-TARGET_BOARD_PLATFORM := sdm660
 TARGET_USES_UM_4_19 := true
 OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
 
@@ -45,9 +43,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/wayne
 TARGET_KERNEL_CONFIG := vendor/wayne_defconfig
 TARGET_KERNEL_VERSION := 4.19
 TARGET_KERNEL_CLANG_COMPILE := true
-
-# QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
@@ -117,6 +112,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+
+# Power
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
