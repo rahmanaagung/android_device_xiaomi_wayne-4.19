@@ -200,6 +200,14 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.3.vendor
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
